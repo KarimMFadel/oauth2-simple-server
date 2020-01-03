@@ -1,3 +1,23 @@
+spring:
+  application:
+    name: auth-server
+  datasource:
+    url: jdbc:postgresql://localhost:5432/oauth2
+    username: testerOauth
+    password: Pa$$w0rd
+    driver-class-name: org.postgresql.Driver
+    schema: classpath:/script/schema.sql
+    data: classpath:/script/data.sql
+    initialization-mode: always
+    platform: postgres
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQL82Dialect
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
 server:
   port: 8282
+logging:
+  level:
+    root: DEBUG
   
