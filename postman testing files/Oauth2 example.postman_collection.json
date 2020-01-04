@@ -1,0 +1,195 @@
+{
+	"id": "fbdd3c83-a4a2-fde1-3ee9-e11ee61e301e",
+	"name": "Oauth2 example",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "Oauth2 simple project first project",
+			"description": "",
+			"collectionId": "fbdd3c83-a4a2-fde1-3ee9-e11ee61e301e",
+			"order": [
+				"3cbb943e-df49-1ef0-5f99-a4cf92cdfdef",
+				"c032d85e-4a02-d0f8-586f-c0a613e1fa03",
+				"72b94f04-9630-789b-480e-f019abe810da"
+			],
+			"owner": "7282760",
+			"folders_order": [],
+			"id": "fe9dc491-874c-6616-e5b4-37f1b7a484e8"
+		}
+	],
+	"folders_order": [
+		"fe9dc491-874c-6616-e5b4-37f1b7a484e8"
+	],
+	"timestamp": 1577046685325,
+	"owner": "7282760",
+	"public": false,
+	"requests": [
+		{
+			"id": "3cbb943e-df49-1ef0-5f99-a4cf92cdfdef",
+			"headers": "Authorization: Basic d2ViOndlYnBhc3M=\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic d2ViOndlYnBhc3M=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8282/oauth/token",
+			"folder": "fe9dc491-874c-6616-e5b4-37f1b7a484e8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "karim",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "karim123",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1577688425583,
+			"name": "generate token",
+			"description": "",
+			"collectionId": "fbdd3c83-a4a2-fde1-3ee9-e11ee61e301e",
+			"responses": []
+		},
+		{
+			"id": "72b94f04-9630-789b-480e-f019abe810da",
+			"headers": "",
+			"headerData": [
+				{
+					"key": "",
+					"value": "",
+					"description": "",
+					"enabled": false
+				}
+			],
+			"url": "http://localhost:8282/oauth/check_token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzgxNDIyNDAsInVzZXJfbmFtZSI6Im1vaGFtZWQiLCJhdXRob3JpdGllcyI6WyJDQU5fV1JJVEUiLCJDQU5fUkVBRCJdLCJqdGkiOiI2ZWVhYTQxZS04MzYxLTRmN2EtOWIyMi1jNjlmMTFkN2Q2YTciLCJjbGllbnRfaWQiOiJhY2NvdW50LXNlcnZpY2UiLCJzY29wZSI6WyJyZWFkIl19.hstISUUEhsBuny1N8tiksByIbF4yW_8F6a-JnHk4AT8",
+			"folder": "fe9dc491-874c-6616-e5b4-37f1b7a484e8",
+			"queryParams": [
+				{
+					"key": "token",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzgxNDIyNDAsInVzZXJfbmFtZSI6Im1vaGFtZWQiLCJhdXRob3JpdGllcyI6WyJDQU5fV1JJVEUiLCJDQU5fUkVBRCJdLCJqdGkiOiI2ZWVhYTQxZS04MzYxLTRmN2EtOWIyMi1jNjlmMTFkN2Q2YTciLCJjbGllbnRfaWQiOiJhY2NvdW50LXNlcnZpY2UiLCJzY29wZSI6WyJyZWFkIl19.hstISUUEhsBuny1N8tiksByIbF4yW_8F6a-JnHk4AT8",
+					"equals": true,
+					"description": "",
+					"enabled": true
+				}
+			],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1578142126450,
+			"name": "Check Token",
+			"description": "",
+			"collectionId": "fbdd3c83-a4a2-fde1-3ee9-e11ee61e301e",
+			"responses": []
+		},
+		{
+			"id": "c032d85e-4a02-d0f8-586f-c0a613e1fa03",
+			"headers": "Authorization: Basic YWNjb3VudC1zZXJ2aWNlOndlYnBhc3M=\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Basic YWNjb3VudC1zZXJ2aWNlOndlYnBhc3M=",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8282/oauth/token",
+			"folder": "fe9dc491-874c-6616-e5b4-37f1b7a484e8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "grant_type",
+					"value": "password",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "username",
+					"value": "mohamed",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "1234",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "scope",
+					"value": "READ",
+					"description": "",
+					"type": "text",
+					"enabled": false
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1578135749308,
+			"name": "generate Oauth2 token using postgresdb with BCryptPasswordEncoder",
+			"description": "",
+			"collectionId": "fbdd3c83-a4a2-fde1-3ee9-e11ee61e301e",
+			"responses": []
+		}
+	]
+}
