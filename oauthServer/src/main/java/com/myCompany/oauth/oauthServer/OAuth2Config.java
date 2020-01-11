@@ -33,7 +33,7 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
 	@Override
 	public void configure(AuthorizationServerEndpointsConfigurer endpoints) throws Exception {
 		endpoints.authenticationManager(this.authenticationManager).tokenStore(tokenStore())
-				//.accessTokenConverter(accessTokenConverter());
+				.accessTokenConverter(accessTokenConverter()) 
 				.userDetailsService(userDetailsService);
 	}
 
@@ -43,6 +43,10 @@ public class OAuth2Config extends AuthorizationServerConfigurerAdapter {
 				//.checkTokenAccess("isAuthenticated()")
 	}
 
+	/**
+	 *  has affect on the generated token by using JWT. 
+	 * @return
+	 */
 	@Bean
 	public JwtAccessTokenConverter accessTokenConverter() {
 		return new JwtAccessTokenConverter();

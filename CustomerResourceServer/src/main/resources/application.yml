@@ -1,0 +1,15 @@
+server:
+  port: 8383
+logging:
+  level:
+    root: INFO
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/customer
+    username: customerUser
+    password: Pa$$w0rd
+    driver-class-name: org.postgresql.Driver
+    schema: classpath:/script/schema.sql
+    data: classpath:/script/data.sql
+    initialization-mode: always
+    platform: postgres
