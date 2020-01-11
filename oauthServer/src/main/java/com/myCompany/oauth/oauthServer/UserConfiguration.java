@@ -10,8 +10,8 @@ import org.springframework.security.crypto.factory.PasswordEncoderFactories;
 import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-@Configuration
-public class UserConfiguration extends GlobalAuthenticationConfigurerAdapter {
+//@Configuration
+public class UserConfiguration {//extends GlobalAuthenticationConfigurerAdapter {
 
 	@Autowired
 	PasswordEncoder passwordEncoder;// = PasswordEncoderFactories.createDelegatingPasswordEncoder();
@@ -25,18 +25,18 @@ public class UserConfiguration extends GlobalAuthenticationConfigurerAdapter {
 //    public static NoOpPasswordEncoder passwordEncoder() {
 //        return (NoOpPasswordEncoder) NoOpPasswordEncoder.getInstance();
 //    }
+//	
+//	@Bean  // {bcrypt}
+//	public PasswordEncoder passwordEncoder() {
+//		return new BCryptPasswordEncoder();
+//	}
 	
-	@Bean  // {bcrypt}
-	public PasswordEncoder passwordEncoder() {
-		return new BCryptPasswordEncoder();
-	}
-	
-	@Override
-	public void init(AuthenticationManagerBuilder auth) throws Exception {
-		auth.inMemoryAuthentication().withUser("mohamed").password(passwordEncoder.encode("1234")).roles("USER", "ADMIN")
-				.authorities("CAN_READ", "CAN_WRITE")
-				.and().withUser("ahmed").password(passwordEncoder.encode("1234"))
-				.roles("USER").authorities("CAN_READ");
-	}
+//	@Override
+//	public void init(AuthenticationManagerBuilder auth) throws Exception {
+//		auth.inMemoryAuthentication().withUser("mohamed").password(passwordEncoder.encode("1234")).roles("USER", "ADMIN")
+//				.authorities("CAN_READ", "CAN_WRITE")
+//				.and().withUser("ahmed").password(passwordEncoder.encode("1234"))
+//				.roles("USER").authorities("CAN_READ");
+//	}
 
 }

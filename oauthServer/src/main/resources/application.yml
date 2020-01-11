@@ -14,7 +14,7 @@ spring:
     database-platform: org.hibernate.dialect.PostgreSQL82Dialect
     show-sql: true
     hibernate:
-      ddl-auto: create-drop
+      ddl-auto: validate
 server:
   port: 8282
 logging:
