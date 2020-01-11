@@ -19,5 +19,5 @@ server:
   port: 8282
 logging:
   level:
-    root: DEBUG
+    root: INFO
   

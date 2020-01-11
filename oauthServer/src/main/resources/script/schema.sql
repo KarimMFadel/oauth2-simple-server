@@ -57,15 +57,10 @@ create table oauth_approvals (
 /* 
 	Users and Authorities tables
 */
-/*
-ALTER table if exists AUTHORITY DROP CONSTRAINT AUTHORITY_NAME ;  
-ALTER table if exists USER_ DROP CONSTRAINT USER_USER_NAME; 
-ALTER table if exists USERS_AUTHORITIES DROP CONSTRAINT USERS_AUTHORITIES_AUTHORITY,USERS_AUTHORITIES_USER_; 
-*/
 
-drop table if exists AUTHORITY;  
-drop table if exists USER_; 
-drop table if exists USERS_AUTHORITIES; 
+drop table if exists AUTHORITY CASCADE;  
+drop table if exists USER_ CASCADE; 
+drop table if exists USERS_AUTHORITIES CASCADE; 
 
 CREATE TABLE AUTHORITY (
    ID  BIGSERIAL NOT NULL,
