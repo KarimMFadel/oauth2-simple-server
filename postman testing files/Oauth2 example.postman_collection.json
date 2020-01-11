@@ -5,6 +5,19 @@
 	"order": [],
 	"folders": [
 		{
+			"name": "Customer",
+			"description": "",
+			"collectionId": "fbdd3c83-a4a2-fde1-3ee9-e11ee61e301e",
+			"order": [
+				"f199e35f-3360-948b-6297-8e4b1c5010af",
+				"f4c784c3-c304-5365-67bd-f1c16077a2e6"
+			],
+			"owner": "7282760",
+			"folder": "fe9dc491-874c-6616-e5b4-37f1b7a484e8",
+			"folders_order": [],
+			"id": "802564fd-ad3f-c7fe-5501-e215d6db3302"
+		},
+		{
 			"name": "Oauth2 simple project first project",
 			"description": "",
 			"collectionId": "fbdd3c83-a4a2-fde1-3ee9-e11ee61e301e",
@@ -14,7 +27,9 @@
 				"72b94f04-9630-789b-480e-f019abe810da"
 			],
 			"owner": "7282760",
-			"folders_order": [],
+			"folders_order": [
+				"802564fd-ad3f-c7fe-5501-e215d6db3302"
+			],
 			"id": "fe9dc491-874c-6616-e5b4-37f1b7a484e8"
 		}
 	],
@@ -100,12 +115,12 @@
 					"enabled": false
 				}
 			],
-			"url": "http://localhost:8282/oauth/check_token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzgxNDIyNDAsInVzZXJfbmFtZSI6Im1vaGFtZWQiLCJhdXRob3JpdGllcyI6WyJDQU5fV1JJVEUiLCJDQU5fUkVBRCJdLCJqdGkiOiI2ZWVhYTQxZS04MzYxLTRmN2EtOWIyMi1jNjlmMTFkN2Q2YTciLCJjbGllbnRfaWQiOiJhY2NvdW50LXNlcnZpY2UiLCJzY29wZSI6WyJyZWFkIl19.hstISUUEhsBuny1N8tiksByIbF4yW_8F6a-JnHk4AT8",
+			"url": "http://localhost:8282/oauth/check_token?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzg3NzAxNjMsInVzZXJfbmFtZSI6Im1vaGFtZWQiLCJhdXRob3JpdGllcyI6WyJDdXN0b21lcl9DUkVBVEUiLCJDdXN0b21lcl9SRUFEIiwiQ3VzdG9tZXJfVVBEQVRFIl0sImp0aSI6IjkwYmEzMmIxLTIyNDktNDAzOC05ZTM2LTdmMmY1YWEzNjRkZiIsImNsaWVudF9pZCI6ImN1c3RvbWVyLXNlcnZpY2UiLCJzY29wZSI6WyJBRE1JTiIsIkNMSUVOVCJdfQ.2D9kZofPmoxPzqRL_K545lnLTAKVtdQJe5jjCgoCl5Y",
 			"folder": "fe9dc491-874c-6616-e5b4-37f1b7a484e8",
 			"queryParams": [
 				{
 					"key": "token",
-					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NzgxNDIyNDAsInVzZXJfbmFtZSI6Im1vaGFtZWQiLCJhdXRob3JpdGllcyI6WyJDQU5fV1JJVEUiLCJDQU5fUkVBRCJdLCJqdGkiOiI2ZWVhYTQxZS04MzYxLTRmN2EtOWIyMi1jNjlmMTFkN2Q2YTciLCJjbGllbnRfaWQiOiJhY2NvdW50LXNlcnZpY2UiLCJzY29wZSI6WyJyZWFkIl19.hstISUUEhsBuny1N8tiksByIbF4yW_8F6a-JnHk4AT8",
+					"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzg3NzAxNjMsInVzZXJfbmFtZSI6Im1vaGFtZWQiLCJhdXRob3JpdGllcyI6WyJDdXN0b21lcl9DUkVBVEUiLCJDdXN0b21lcl9SRUFEIiwiQ3VzdG9tZXJfVVBEQVRFIl0sImp0aSI6IjkwYmEzMmIxLTIyNDktNDAzOC05ZTM2LTdmMmY1YWEzNjRkZiIsImNsaWVudF9pZCI6ImN1c3RvbWVyLXNlcnZpY2UiLCJzY29wZSI6WyJBRE1JTiIsIkNMSUVOVCJdfQ.2D9kZofPmoxPzqRL_K545lnLTAKVtdQJe5jjCgoCl5Y",
 					"equals": true,
 					"description": "",
 					"enabled": true
@@ -121,7 +136,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1578142126450,
+			"time": 1578770716305,
 			"name": "Check Token",
 			"description": "",
 			"collectionId": "fbdd3c83-a4a2-fde1-3ee9-e11ee61e301e",
@@ -129,11 +144,11 @@
 		},
 		{
 			"id": "c032d85e-4a02-d0f8-586f-c0a613e1fa03",
-			"headers": "Authorization: Basic YWNjb3VudC1zZXJ2aWNlOndlYnBhc3M=\nContent-Type: application/x-www-form-urlencoded\n",
+			"headers": "Authorization: Basic Y3VzdG9tZXItc2VydmljZTp3ZWJwYXNz\nContent-Type: application/x-www-form-urlencoded\n",
 			"headerData": [
 				{
 					"key": "Authorization",
-					"value": "Basic YWNjb3VudC1zZXJ2aWNlOndlYnBhc3M=",
+					"value": "Basic Y3VzdG9tZXItc2VydmljZTp3ZWJwYXNz",
 					"description": "",
 					"enabled": true
 				},
@@ -185,8 +200,68 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1578135749308,
+			"time": 1578763099760,
 			"name": "generate Oauth2 token using postgresdb with BCryptPasswordEncoder",
+			"description": "",
+			"collectionId": "fbdd3c83-a4a2-fde1-3ee9-e11ee61e301e",
+			"responses": []
+		},
+		{
+			"id": "f199e35f-3360-948b-6297-8e4b1c5010af",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzg3NzAxNjMsInVzZXJfbmFtZSI6Im1vaGFtZWQiLCJhdXRob3JpdGllcyI6WyJDdXN0b21lcl9DUkVBVEUiLCJDdXN0b21lcl9SRUFEIiwiQ3VzdG9tZXJfVVBEQVRFIl0sImp0aSI6IjkwYmEzMmIxLTIyNDktNDAzOC05ZTM2LTdmMmY1YWEzNjRkZiIsImNsaWVudF9pZCI6ImN1c3RvbWVyLXNlcnZpY2UiLCJzY29wZSI6WyJBRE1JTiIsIkNMSUVOVCJdfQ.2D9kZofPmoxPzqRL_K545lnLTAKVtdQJe5jjCgoCl5Y\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzg3NzAxNjMsInVzZXJfbmFtZSI6Im1vaGFtZWQiLCJhdXRob3JpdGllcyI6WyJDdXN0b21lcl9DUkVBVEUiLCJDdXN0b21lcl9SRUFEIiwiQ3VzdG9tZXJfVVBEQVRFIl0sImp0aSI6IjkwYmEzMmIxLTIyNDktNDAzOC05ZTM2LTdmMmY1YWEzNjRkZiIsImNsaWVudF9pZCI6ImN1c3RvbWVyLXNlcnZpY2UiLCJzY29wZSI6WyJBRE1JTiIsIkNMSUVOVCJdfQ.2D9kZofPmoxPzqRL_K545lnLTAKVtdQJe5jjCgoCl5Y",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8383/customers/checkService/",
+			"folder": "fe9dc491-874c-6616-e5b4-37f1b7a484e8",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1578770715382,
+			"name": "Customer checkService",
+			"description": "",
+			"collectionId": "fbdd3c83-a4a2-fde1-3ee9-e11ee61e301e",
+			"responses": []
+		},
+		{
+			"id": "f4c784c3-c304-5365-67bd-f1c16077a2e6",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzg3NzAxNjMsInVzZXJfbmFtZSI6Im1vaGFtZWQiLCJhdXRob3JpdGllcyI6WyJDdXN0b21lcl9DUkVBVEUiLCJDdXN0b21lcl9SRUFEIiwiQ3VzdG9tZXJfVVBEQVRFIl0sImp0aSI6IjkwYmEzMmIxLTIyNDktNDAzOC05ZTM2LTdmMmY1YWEzNjRkZiIsImNsaWVudF9pZCI6ImN1c3RvbWVyLXNlcnZpY2UiLCJzY29wZSI6WyJBRE1JTiIsIkNMSUVOVCJdfQ.2D9kZofPmoxPzqRL_K545lnLTAKVtdQJe5jjCgoCl5Y\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1Nzg3NzAxNjMsInVzZXJfbmFtZSI6Im1vaGFtZWQiLCJhdXRob3JpdGllcyI6WyJDdXN0b21lcl9DUkVBVEUiLCJDdXN0b21lcl9SRUFEIiwiQ3VzdG9tZXJfVVBEQVRFIl0sImp0aSI6IjkwYmEzMmIxLTIyNDktNDAzOC05ZTM2LTdmMmY1YWEzNjRkZiIsImNsaWVudF9pZCI6ImN1c3RvbWVyLXNlcnZpY2UiLCJzY29wZSI6WyJBRE1JTiIsIkNMSUVOVCJdfQ.2D9kZofPmoxPzqRL_K545lnLTAKVtdQJe5jjCgoCl5Y",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8383/customers/getaLL/",
+			"folder": "802564fd-ad3f-c7fe-5501-e215d6db3302",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1578770714046,
+			"name": "Customer getaLL",
 			"description": "",
 			"collectionId": "fbdd3c83-a4a2-fde1-3ee9-e11ee61e301e",
 			"responses": []
